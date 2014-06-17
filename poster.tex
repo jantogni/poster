@@ -211,7 +211,7 @@
 \psshadowbox{\makebox[0.83\textwidth]{%
     \hfill
     \parbox[t]{0.8\linewidth}{%
-\hfill{\large\bf{\color{red}ABSTRACT}}\hfill\mbox{}\\
+\hfill{\large\bf{\color{red} Abstract}}\hfill\mbox{}\\
 The success of an observatory is usually measured by its impact in the
 scientific community, so a common objective is to provide transparent ways to
 access the generated data. The Chilean Virtual Observatory (ChiVO), started
@@ -224,16 +224,16 @@ prototype was designed and implemented for the ALMA large scale of data.
 \hfill}}\hfill\mbox{}
 
 \begin{lrbox}{\spalten}
-  \parbox[t][0.6\textheight]{1.3\textwidth}{
+  \parbox[t][0.61\textheight]{1.3\textwidth}{
    % \vspace*{0.2cm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%                 first column                 %%%             
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \begin{spalte}
+\begin{spalte}
      
-	  \begin{kasten}
+	\begin{kasten}
         \section*{\hspace{0.2cm} {\color{red} Problem} }
-			\begin{minipage}[t]{0.95\linewidth}
+		\begin{minipage}[t]{0.85\linewidth}
 			Over time, observatories will start generating better quality data, in
 			computational terms, with data sets in the order of the Tera- and Petabytes
 			produced each year. This creates a series of problems, such as the
@@ -251,59 +251,55 @@ prototype was designed and implemented for the ALMA large scale of data.
 			online data access platform; compare these needs to the IVOA protocols and
 			standards; and finally implement a functional prototype that fulfills the
 			previous requirements.
-
-			%When a development team is given the task of creating a software project,
-			%one of the first questions is the selection of the programming language.
-			%This is a very important decision, as performance is greatly affected by the
-			%paradigm and implementation of the available compilers for that programming
-			%language. The usual manner to solve this is to prototype, use previous
-			%experience and test the different wanted characteristics, such as
-			%modularity, performance, and scalability.
-			%
-			%Aside the selection of programming language [2], the team has to
-			%consider the selection of a graphical library. This is a nested decision, as very
-			%few libraries are available for several languages.
-			%Then, the question arises: ``Of all the graphical libraries available, which is
-			%the best one for my project?''
-			%
-			%In our case, the main problem is to find the best choice in the data trending
-			%area, where performance of the graphical representation are critical.
-			%There are several ways to measure the performance and quality of graphical
-			%libraries, some examples are:\\
-
-			%\begin{minipage}[t]{0.3\linewidth}
-			%\begin{itemize}
-			%    \item Number of chart types handled.
-			%    \item Trace options.
-			%\end{itemize}
-			%\end{minipage}
-			%\begin{minipage}[t]{0.3\linewidth}
-			%\begin{itemize}
-			%    \item Plot functionality.
-			%    \item Frames Per Second (FPS).
-			%\end{itemize}
-			%\end{minipage}
-			%\begin{minipage}[t]{0.3\linewidth}
-			%\begin{itemize}
-		        %\item Data volume vs. performance
-			%\end{itemize}
-			%\end{minipage}
-			%\\
-
-			%In the present work the most important metrics are FPS and the data
-			%volume vs. performance. Large amounts of data need to be quickly processed
-			%and displayed, together with additional information.
-			
-			%Given this, a third question remains open: ``How does a distributed system
-			%affect my trending application's performance?''			
 		\end{minipage} \hfill
-      \end{kasten}
-	  \begin{kasten}
+\end{kasten}\hfill
+
+	\begin{kasten}
         \section*{\hspace{0.2cm} {\color{red} ChiVO Architecture} }
-			\vspace{-0.1cm}
-			\begin{minipage}[t]{0.43\linewidth}
+			%\vspace{-0.1cm}
+
+			\begin{minipage}{0.45\linewidth}
+			The ChiVO is a virtual observatory under construction
+			that will host the data of the observatories located in Chile, adhered to the
+			interoperability standards of the International Virtual Observatories Alliance
+			(IVOA), and using last generation technologies.  Broadly, the architecture has
+			three layers: \emph{Users}:  astronomers and scientists in general, interested
+			in the data published by the observatories; \emph{Resources}: observatories and
+			centres producing astronomical data (real or simulated); \emph{Intermediate
+			layer}: defines what a virtual observatory is; that is, how users and resources
+			communicate using protocols and standards to search and accees data.
 			\end{minipage}
-	  \end{kasten}
+
+			\begin{minipage}{0.45\linewidth}
+                        %\strut\vskip -\baselineskip
+                        %\hfill
+                        \includegraphics[width=1.0\linewidth]{img/ivoavacio}
+                        %\vspace{0.1cm}
+                        \end{minipage}
+
+			%\begin{minipage}{0.25\textwidth}
+                        %%\strut\vskip -\baselineskip
+                        %%\hfill
+                        %\includegraphics[width=0.4\textwidth]{logos/usm_logo}
+                        %%\vspace{0.1cm}
+                        %\end{minipage}\vfill
+
+                        %\begin{minipage}[t]{0.95\linewidth}
+                        %20\,[Hz] is the maximum monitoring frequency available in ALMA since it is limited by its 48\,[ms] period.
+
+                        %The test that was run on the FrontEnd receiver consisted in locking the band in 0.5\,[GHz] steps over the range of
+                        %the four available bands. The test took approximately 4 hours, time during which the sampling system GUI was
+                        %continuously plotting and saving data to disk. At the time of the test only two antennas were available,
+                        %this test should be run again when there are six available antennas for such purpose. This would demonstrate how the
+                        %overall system behaves when increasing the number of distributed nodes.
+
+                        %The overall result of the Sampling System is positive, since it met all the engineering requirements for
+                        %monitoring during the specified test. It could cope with the amount of properties and the sampling rates
+                        %specified by the engineering division. Data was properly stored to disk, and the plots
+                        %provided a quick look for the data before it was more thoroughly analyzed.
+                        %\end{minipage}
+
+	 \end{kasten}
     \end{spalte}
 	 \hfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -313,7 +309,26 @@ prototype was designed and implemented for the ALMA large scale of data.
        
       \begin{kasten}
         \section*{\hspace{0.2cm} {\color{red} Progress Status} }
-
+\begin{minipage}{0.2\textwidth}
+\begin{tabular}{|c|c|c|}
+\hline
+ A & B & C \\
+\hline
+ 1 & 2 & 3  \\
+\hline 
+ 4 & 5 & 6 \\
+\hline
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.2\textwidth}
+\begin{tabular}{c|c|c}
+ A & B & C \\
+\hline
+ 1 & 2 & 3  \\
+\hline 
+ 4 & 5 & 6 \\
+\end{tabular}
+\end{minipage}
       \end{kasten}
 
     \end{spalte}
@@ -380,7 +395,7 @@ necessary to work in the creation or adaptation of the IVOA standards.
 	{\scriptsize
 	{\small\bf Acknowledgements}
 	
-	\renewcommand{\baselinestretch}{0.5}
+	\renewcommand{\baselinestretch}{0.4}
 	This work is partially financed by the FONDEF D11I1060 project:
 	``\emph{Development of an Astro-Informatic Platform for Management and Intelligent Analisys of Large-scale Data}''
 	}
@@ -391,41 +406,10 @@ necessary to work in the creation or adaptation of the IVOA standards.
 	{\scriptsize
 	\renewcommand{\baselinestretch}{1.0}
 	{\small\bf References}
-
-
         [1] Graham, Matthew and Harrison, Paul and Morris, Dave and Rixon, ``VOSpace service specification, Version 1.01'' (2007).
         \renewcommand{\baselinestretch}{0.5}
-	
-	%{\small\bf References}
-	%[1] Brooks, M. et~al., ``ALMA Monitor and Control Bus Interface Specification''
-	%in [{\em ALMA Documentation}{\hspace{0.1em}}], (2007).
-	%\renewcommand{\baselinestretch}{0.5}
-	%[1] Chiozzi, G. et al., ``The ALMA Common Software: A developer friendly CORBA-based framework,'' in [Proceedings of SPIE 2004 ], (2004).
-	%\renewcommand{\baselinestretch}{0.5}
-	%
 	[2] Prechelet, L., ``An empirical comparision of seven programming languages,'' Computer 33(10), 23-29 (2000)
 	\renewcommand{\baselinestretch}{0.5}
-	%
-	%[3] Sampling System GUI Project \url{http://csrg.inf.utfsm.cl/twiki4/bin/view/ACS/SamplingSystem}
-	%\renewcommand{\baselinestretch}{0.5}
-	%
-	%[4] Marcantonio, P. D. et al., ``ACS sampling system: Design, implementation and performance evaluation,'' in [Proceedings of SPIE ], (2004).
-	%\renewcommand{\baselinestretch}{0.5}
-	%
-	%[5] Westermann, A., ``JChart2D.'' \url{http://jchart2d.sourceforge.net/index.shtml}.
-	%\renewcommand{\baselinestretch}{0.5}
-%	}	
-%\end{minipage}
-%\begin{minipage}[t]{0.45\linewidth}
-%	{\scriptsize
-%	\renewcommand{\baselinestretch}{1.0}
-%	\vspace{0.2cm}
-
-	%[6] Hunter, J. D., ``Matplotlib: A 2D graphics environment,'' Computing in Science \& Engineering 9(3), 90-95 (2007).
-	%\renewcommand{\baselinestretch}{0.5}
-	%
-	%[7] Rathmann, U. and Wilgen, J., ``Qwt - Qt widgets for technical applications.'' \url{http://qwt.sourceforge.net}.
-	%\renewcommand{\baselinestretch}{0.5}
 	}
 \end{minipage}
 }}\hfill\mbox{}
