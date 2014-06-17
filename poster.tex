@@ -233,7 +233,7 @@ prototype was designed and implemented for the ALMA large scale of data.
      
 	\begin{kasten}
         \section*{\hspace{0.2cm} {\color{red} Problem} }
-		\begin{minipage}[t]{0.85\linewidth}
+		\begin{minipage}[t]{1.0\linewidth}
 			Over time, observatories will start generating better quality data, in
 			computational terms, with data sets in the order of the Tera- and Petabytes
 			produced each year. This creates a series of problems, such as the
@@ -257,48 +257,65 @@ prototype was designed and implemented for the ALMA large scale of data.
 	\begin{kasten}
         \section*{\hspace{0.2cm} {\color{red} ChiVO Architecture} }
 			%\vspace{-0.1cm}
-
-			\begin{minipage}{0.45\linewidth}
-			The ChiVO is a virtual observatory under construction
+			\begin{minipage}{0.5\linewidth}
+			ChiVO is a virtual observatory under construction
 			that will host the data of the observatories located in Chile, adhered to the
 			interoperability standards of the International Virtual Observatories Alliance
-			(IVOA), and using last generation technologies.  Broadly, the architecture has
-			three layers: \emph{Users}:  astronomers and scientists in general, interested
-			in the data published by the observatories; \emph{Resources}: observatories and
-			centres producing astronomical data (real or simulated); \emph{Intermediate
-			layer}: defines what a virtual observatory is; that is, how users and resources
-			communicate using protocols and standards to search and accees data.
+			(IVOA), and using last generation technologies.  
+			Broadly, the architecture has three layers:
+			\begin{itemize}
+				\item \emph{Users}: \\astronomers and scientists in general, interested in the data published by the observatories
+				\item \emph{Resources}: \\observatories and centres producing astronomical data (real or simulated)
+				\item \emph{Intermediate layer}: \\defines what a virtual observatory is; that is, how users and resources communicate using protocols and standards to search and accees data.
+			\end{itemize}
+			%\emph{Users}:  astronomers and scientists in general, interested in the data
+			%published by the observatories; \emph{Resources}: observatories and centres
+			%producing astronomical data (real or simulated); \emph{Intermediate layer}:
+			%defines what a virtual observatory is; that is, how users and resources
+			%communicate using protocols and standards to search and accees data.
+			\textbf{Requirements}\\\vspace{0.2cm}
+			The creation of the ChiVO required the identification of the current needs of
+			the national astronomy community, which can be summarized in:
 			\end{minipage}
-
-			\begin{minipage}{0.45\linewidth}
+			\begin{minipage}{0.5\textwidth}
                         %\strut\vskip -\baselineskip
                         %\hfill
-                        \includegraphics[width=1.0\linewidth]{img/ivoavacio}
+			\begin{center}
+                        	\includegraphics[width=0.8\textwidth]{img/chivo_capas}
+			\end{center}
                         %\vspace{0.1cm}
                         \end{minipage}
 
-			%\begin{minipage}{0.25\textwidth}
-                        %%\strut\vskip -\baselineskip
-                        %%\hfill
-                        %\includegraphics[width=0.4\textwidth]{logos/usm_logo}
-                        %%\vspace{0.1cm}
-                        %\end{minipage}\vfill
-
-                        %\begin{minipage}[t]{0.95\linewidth}
-                        %20\,[Hz] is the maximum monitoring frequency available in ALMA since it is limited by its 48\,[ms] period.
-
-                        %The test that was run on the FrontEnd receiver consisted in locking the band in 0.5\,[GHz] steps over the range of
-                        %the four available bands. The test took approximately 4 hours, time during which the sampling system GUI was
-                        %continuously plotting and saving data to disk. At the time of the test only two antennas were available,
-                        %this test should be run again when there are six available antennas for such purpose. This would demonstrate how the
-                        %overall system behaves when increasing the number of distributed nodes.
-
-                        %The overall result of the Sampling System is positive, since it met all the engineering requirements for
-                        %monitoring during the specified test. It could cope with the amount of properties and the sampling rates
-                        %specified by the engineering division. Data was properly stored to disk, and the plots
-                        %provided a quick look for the data before it was more thoroughly analyzed.
-                        %\end{minipage}
-
+\vspace{0.8cm}
+                     \begin{minipage}[t]{0.3\linewidth}
+                        \begin{itemize}
+                            \item \emph{Discover:} Find astronomical data of an object or instrument on a high dimension
+        specific region of the space, based on parameters of the spatial,
+        temporary, spectral shafts, red shift, polarization, etc., either by
+        search or exploration.
+                        \end{itemize}
+                        \end{minipage}
+                        \begin{minipage}[t]{0.3\linewidth}
+                        \begin{itemize}
+                            \item \emph{Obtain:} A download link of the required data in different formats, either in
+        		the VO or in an external service.
+                        \end{itemize}
+                        \end{minipage}
+                        \begin{minipage}[t]{0.3\linewidth}
+                        \begin{itemize}
+                        \item \emph{Compare:} Information crossing of the data obtained between the different sources
+        		of information.
+                        \end{itemize}
+                        \end{minipage}
+			\\\vspace{0.3cm}
+                     	\begin{minipage}[t]{1.0\linewidth}
+			\vspace{0.3cm}
+			A multidisciplinary team participated in this process (astronomers, engineers,
+			scientists, experts in ALMA data, etc.); its duration was approximately 4
+			months, while the astronomy community was defining its requirements, and the
+			use cases, and IT team contrasted it with international standards.
+			\end{minipage}
+                        \\
 	 \end{kasten}
     \end{spalte}
 	 \hfill
@@ -309,26 +326,62 @@ prototype was designed and implemented for the ALMA large scale of data.
        
       \begin{kasten}
         \section*{\hspace{0.2cm} {\color{red} Progress Status} }
-\begin{minipage}{0.2\textwidth}
-\begin{tabular}{|c|c|c|}
-\hline
- A & B & C \\
-\hline
- 1 & 2 & 3  \\
-\hline 
- 4 & 5 & 6 \\
-\hline
-\end{tabular}
-\end{minipage}
-\begin{minipage}{0.2\textwidth}
-\begin{tabular}{c|c|c}
- A & B & C \\
-\hline
- 1 & 2 & 3  \\
-\hline 
- 4 & 5 & 6 \\
-\end{tabular}
-\end{minipage}
+	\begin{minipage}[t]{1.0\linewidth}
+		It was necessary to identify not only the requirements and use cases, but the
+		interactions that users will have with the system, to begin the ChiVO
+		development.  We can observe the interaction diagram sequence between the user
+		and the ChiVO in figure.  According to this diagram, the
+		requirements and technologies used will be specified in the progress status for
+		each abstraction layer.
+
+		The ChiVO software architecture is based on the use of the IVOA
+		protocols and standards.  These protocols and standards are grouped in layers,
+		with emphasis on the application and data layers; this, because their basic
+		standards define the minimum operation that a VO should conduct.\vspace{0.3cm}
+	\end{minipage}
+	\begin{minipage}[t]{1.0\linewidth}
+		\begin{center}
+		\includegraphics[width=0.9\textwidth]{img/secuencia}
+		\end{center}
+	\end{minipage}
+	\begin{minipage}[t]{0.5\linewidth}
+\textbf{Abstraction Layer:  Clients}\\\vspace{0.2cm}
+Within the sequence diagram, the Frontend is the VO-Client; that is, it is in
+charge of generating the interaction between users and other elements within
+the system.
+At the present, the frontend generated in RoR enables the interaction with:
+\begin{description}
+    \item Resolving names:\hfill \\
+        from a name (String) returns the position of an object in celestial
+        coordinates, using the SESAME service of Astrogrid.
+    \item Registry: \hfill \\
+        searches services within the endpoint, and then, according to the
+        user's needs, it chooses on which to work for consultations.
+    \item Services: \hfill \\
+        consults with the different web services that provide data through a
+        certain protocol, and standardizes the results in a XML VOTable for its
+        organized deployment, using a VOView javascript library.
+\end{description}
+	\end{minipage}
+	\begin{minipage}[t]{0.5\linewidth}
+\begin{description}
+\item \textbf{Abstraction Layer:  Applications} \hfill \\
+The Endpoint is responsible for the generation of a transparent interaction
+between the VO clients, and the possible resources that might be configured.
+Here, the Endpoint generates an interface for services configured by the
+Backend, and for those available, through the VO-Paris record.  VO-Paris has a
+Web API in REST to consult for resources, returning a JSON file with outcomes.\\
+\item \textbf{Abstraction Layer:  Data} \hfill \\
+Currently, ALMA furnishes to the ChiVO public data, which include ASDM,
+Measurement[2], FITS[3], however, it is necessary to draw out the ObsCoreDM metadata
+to make possible their entry to the data base.
+The procedure is carried out through a program, and using the DaCHS backend
+framework, which enables the configuration of resources and services through
+Resource Descriptor  configuration files.  Once created the entries in the data
+base, and configured the SCS, SSAP, SIAP, TAP services, it can be accessed
+through queries defined in each protocol.
+\end{description}
+	\end{minipage}
       \end{kasten}
 
     \end{spalte}
@@ -340,15 +393,14 @@ prototype was designed and implemented for the ALMA large scale of data.
 \resizebox*{0.95\textwidth}{!}{
   \usebox{\spalten}}\hfill\mbox{}
 
-\vspace{0.1cm}
+\vspace{1.0cm}
 \hspace{1cm}
 \psshadowbox[cornersize=absolute,linearc=14pt]{\makebox[0.923\textwidth]{%
  \hfill
  \parbox[t]{0.9\linewidth}{
 \begin{minipage}[t]{0.95\linewidth}
 \section*{ {\normalsize \color{red} Conclusions}}
-{\footnotesize
-%\renewcommand{\baselinestretch}{0.5}
+{%\footnotesize
 			\begin{minipage}[t]{0.50\linewidth}
 Despite the amount of data generated by observatories in Chile, there was no VO
 a year ago, and particularly, ALMA at the moment does not have services
@@ -363,10 +415,8 @@ pleased by the progress made. However, there are always things to implement, or
 new ideas coming up. So far it has been possible to capture the astronomers
 requirements, and to address the study of the protocols and standards, 
 thus creating the data access services (SCS, SIA, SSA, TAP); 
-
 			\end{minipage} \hspace{0.2cm}
 			\begin{minipage}[t]{0.50\linewidth}
-
 these have access to the data base that use a relational data model (ObsCore),
 subjected to their own ChiVO architecture, which enables the interoperability
 of the services.
@@ -377,11 +427,10 @@ launched its second iteration, which will include the public data of the cycle
 chance to test in situ the current functionalities and limitations of the
 implementations. For the following versions it is considered the
 implementation of other IVOA architecture protocols, as the section of Registry
-and standards of access to resources, as VOSPace [1]. %\cite{graham2007vospace}.
+and standards of access to resources, as VOSPace [1]. 
 Regarding the models and multidimensional data, as the ALMA cubes, it will be
 necessary to work in the creation or adaptation of the IVOA standards.
 			\end{minipage}
-
 }
 \end{minipage}
 }\hfill
@@ -406,9 +455,14 @@ necessary to work in the creation or adaptation of the IVOA standards.
 	{\scriptsize
 	\renewcommand{\baselinestretch}{1.0}
 	{\small\bf References}
+
         [1] Graham, Matthew and Harrison, Paul and Morris, Dave and Rixon, ``VOSpace service specification, Version 1.01'' (2007).
         \renewcommand{\baselinestretch}{0.5}
-	[2] Prechelet, L., ``An empirical comparision of seven programming languages,'' Computer 33(10), 23-29 (2000)
+
+	[2] Petry, Dirk and others, ``Analysing ALMA data with CASA'' (2012).
+	\renewcommand{\baselinestretch}{0.5}
+
+	[3] Wells, DC and Greisen, EW and Harten, RH, ``FITS-a flexible image transport system'', Astronomy and Astrophysics Supplement Series (1981).
 	\renewcommand{\baselinestretch}{0.5}
 	}
 \end{minipage}
